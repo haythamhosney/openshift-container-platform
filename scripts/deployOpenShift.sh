@@ -207,8 +207,8 @@ openshift_examples_modify_imagestreams=true
 openshift_storage_glusterfs_image=registry.access.redhat.com/rhgs3/rhgs-server-rhel7
 openshift_storage_glusterfs_heketi_image=registry.access.redhat.com/rhgs3/rhgs-volmanager-rhel7
 openshift_storage_glusterfs_block_image=registry.access.redhat.com/rhgs3/rhgs-gluster-block-prov-rhel7
-openshift_image_tag=v3.9.32
-openshift_pkg_version=-3.9.32
+#openshift_image_tag=v3.9.32
+#openshift_pkg_version=-3.9.32
 
 # Type of clustering being used by OCP
 $HAMODE
