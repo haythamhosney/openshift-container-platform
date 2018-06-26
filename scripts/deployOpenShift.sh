@@ -201,7 +201,7 @@ openshift_enable_service_catalog=false
 
 #openshift_docker_additional_registries=registry.access.redhat.com
 #openshift_docker_insecure_registries=registry.access.redhat.com
-oreg_url='registry.access.redhat.com/openshift3/ose-${component}:${version}'
+oreg_url=registry.access.redhat.com/openshift3/ose-\${component}:\${version}
 #system_images_registry="registry.access.redhat.com"
 openshift_examples_modify_imagestreams=true
 openshift_storage_glusterfs_image=registry.access.redhat.com/rhgs3/rhgs-server-rhel7
