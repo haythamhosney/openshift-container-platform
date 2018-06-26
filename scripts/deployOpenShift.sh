@@ -199,6 +199,17 @@ $registrygluster
 # Deploy Service Catalog
 openshift_enable_service_catalog=false
 
+openshift_docker_additional_registries=registry.access.redhat.com
+openshift_docker_insecure_registries=registry.access.redhat.com
+openshift_docker_blocked_registries=docker.io
+oreg_url=registry.access.redhat.com/openshift3/ose-${component}:${version}
+system_images_registry="registry.access.redhat.com"
+openshift_examples_modify_imagestreams=true
+openshift_storage_glusterfs_image=registry.access.redhat.com/rhgs3/rhgs-server-rhel7
+openshift_storage_glusterfs_heketi_image=registry.access.redhat.com/rhgs3/rhgs-volmanager-rhel7
+openshift_storage_glusterfs_block_image=registry.access.redhat.com/rhgs3/rhgs-gluster-block-prov-rhel7
+
+
 # Type of clustering being used by OCP
 $HAMODE
 
