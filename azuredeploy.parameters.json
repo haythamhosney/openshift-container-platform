@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"_artifactsLocation": {
-			"value": "https://raw.githubusercontent.com/Microsoft/openshift-container-platform/master"
+			"value": "https://raw.githubusercontent.com/haythamhosney/openshift-container-platform/master"
 		},
 		"masterVmSize": {
 			"value": "Standard_E2s_v3"
@@ -18,10 +18,10 @@
 			"value": "Standard_E4s_v3"
 		},
 		"storageKind": {
-			"value": "changeme"
+			"value": "managed"
 		},
 		"openshiftClusterPrefix": {
-			"value": "changeme"
+			"value": "ocp39"
 		},
 		"masterInstanceCount": {
 			"value": 3
@@ -33,58 +33,58 @@
 			"value": 3
 		},
 		"dataDiskSize": {
-			"value": 128
+			"value": 64
 		},
 		"adminUsername": {
-			"value": "changeme"
+			"value": "ocpadmin"
 		},
 		"openshiftPassword": {
-			"value": "changeme"
+			"value": "HaythamIbrahim"
 		},
 		"enableMetrics": {
-			"value": "false"
+			"value": "true"
 		},
 		"enableLogging": {
-			"value": "false"
+			"value": "true"
 		},
 		"enableCNS": {
 			"value": "false"
 		},
 		"rhsmUsernameOrOrgId": {
-			"value": "changeme"
+			"value": "figaro_cmd"
 		},
 		"rhsmPasswordOrActivationKey": {
-			"value": "changeme"
+			"value": "fcqoh6wj1HpkQqubJJY4"
 		},
 		"rhsmPoolId": {
-			"value": "changeme"
+			"value": "8a85f9814ff0134a014ff43b45e75573"
 		},
 		"sshPublicKey": {
-			"value": "GEN-SSH-PUB-KEY"
+			"value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCqjBnsFXUa5myshT+aiBMsPoGpXWyH6Z0gAWikuY+oKT2eZdZLrDCwn/Wbd0JMgRDLhizoX58NyF1htG6uxvtnOSC4W7eY3jbp9lN+T14zBlsbDzOiXYUQLW4NEdUYlxpnvKlKs7seYeQXrqpekO09YluJzphC1QQnDVsWfbDCeivs33Dx/9iMPED9VZnBSTZFDV12vyEjtnxdtQpcD7RXCWNtGYWSxHjwItxMTDrp36qk7WO1T27T1QnnFdUm/5P18YnCIPraXYLNQFE4eVPHqwHDjjaH4IRYY7xaUkLsVLob2OMsucbFiqFO92n9FJjqZuIZFPIuwpmMQLIseiz36wBBcb1E6Ya+v/t9Y96xxjgKptCe9tw9hLgVXh5hu9tAAjY/Kiupmo0xeR98/5m7la7qd9stqRw7tvkF0gu2ar/Hfv29V3oWAIFyChOMA1SVnKgKGhi6hfCuEORSdDsxQqYsrzbmCYZ5SW/UTyzFDqeAB8Auh+bqOCpSKaZOsOXaRgw0TOd54bLeQGJrnMJT8mr2nFhGzOgO76/VuMCEGdu3XsLLLADs3pfRYn0fCyhRQYkg5GpQjpJUVJ+P+arO+3ns9+l1N33DINHjHtBeRRlHX8JXBAV/UllXUuVrAkBfJPXCOiDu8UWJsLRRmwPOo3xGiWTYcpZApDOvhdqPEw=="
 		},
 		"keyVaultResourceGroup": {
-			"value": "changeme"
+			"value": "haythamocp"
 		},
 		"keyVaultName": {
-			"value": "changeme"
+			"value": "haythamocpkv"
 		},
 		"keyVaultSecret": {
-			"value": "changeme"
+			"value": "haythamocpsecret"
 		},
 		"enableAzure": {
 			"value": "true"
 		},
 		"aadClientId": {
-			"value": "changeme"
+			"value": "08a06720-b6ac-4f49-833a-0808d1a3ff9d"
 		},
 		"aadClientSecret": {
-			"value": "changeme"
+			"value": "TV04bUvh3m7n"
 		},
 		"defaultSubDomainType": {
 			"value": "nipio"
 		},
 		"defaultSubDomain": {
-			"value": "changeme"
+			"value": "hibrahim.net"
 		},
 		"addressPrefix": {
 			"value": "10.0.0.0/14"
