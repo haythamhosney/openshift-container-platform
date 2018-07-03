@@ -318,6 +318,7 @@ sed -i -e "s/# Defaults    requiretty/Defaults    requiretty/" /etc/sudoers
 
 # Install OpenShift Atomic Client
 cd /root
+if [ ! -d ".kube" ]; then
 mkdir .kube
 runuser ${SUDOUSER} -c "scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null ${SUDOUSER}@${MASTER}-0:~/.kube/config /tmp/kube-config"
 cp /tmp/kube-config /root/.kube/config
@@ -326,7 +327,7 @@ cp /tmp/kube-config /home/${SUDOUSER}/.kube/config
 chown --recursive ${SUDOUSER} /home/${SUDOUSER}/.kube
 rm -f /tmp/kube-config
 yum -y install atomic-openshift-clients
-
+fi
 # Adding user to OpenShift authentication file
 echo $(date) " - Adding OpenShift user"
 runuser $SUDOUSER -c "ansible-playbook -f 10 ~/openshift-container-platform-playbooks/addocpuser.yaml"
